@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/mainImage"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginEnd="8dp"
@@ -35,13 +35,16 @@
         tools:text="@string/chinese" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/decideBtn"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/decide"
-        android:textStyle="bold"
         android:background="@color/colorPrimary"
+        android:fontFamily="@font/muli_bold"
+        android:text="@string/decide"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
