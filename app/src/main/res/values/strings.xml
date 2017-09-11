@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Dinner Decider</string>
     <string name="chinese">Chinese</string>
+    <string name="decide">Decide</string>
 </resources>
