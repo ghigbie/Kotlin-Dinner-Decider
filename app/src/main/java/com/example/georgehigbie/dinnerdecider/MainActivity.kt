@@ -2,6 +2,7 @@ package com.example.georgehigbie.dinnerdecider
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
@@ -22,9 +23,11 @@ class MainActivity : AppCompatActivity() {
 
         addFoodBtn.setOnClickListener {
             val newFood = addFoodText.text.toString()
-            foodList.add(newFood)
-            addFoodText.text.clear()
-            println(foodList)
+            if(newFood.isNotEmpty()) {
+                foodList.add(newFood)
+                addFoodText.text.clear()
+                println(foodList)
+            }
         }
     }
 }
